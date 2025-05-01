@@ -4,7 +4,6 @@ import com.example.pruebaTecnica.dto.UserDTO;
 import com.example.pruebaTecnica.model.User;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 /**
