@@ -1,5 +1,6 @@
 package com.example.pruebaTecnica.service.interfaces;
 
+import com.example.pruebaTecnica.dto.TaskDTO;
 import com.example.pruebaTecnica.model.Task;
 import com.example.pruebaTecnica.model.User;
 import org.springframework.stereotype.Service;
@@ -12,14 +13,16 @@ import java.util.List;
  * @author Adriana Villamizar Vera
  * @since 1.0
  */
-@Service
 public interface ITaskService {
 
-    List<Task> findAll();
+    List<TaskDTO> findAll();
 
-    Task createTask(Task aTask);
+    TaskDTO createTask(TaskDTO taskDTO);
+
+    TaskDTO updateTask(TaskDTO taskDTO);
+
+    TaskDTO changeStatus(Integer id, String status);
 
     void deleteTask(Integer aId);
 
-    void updateTask(Task aTask);
 }

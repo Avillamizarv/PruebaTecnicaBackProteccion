@@ -47,7 +47,7 @@ public class UserServiceImpl implements IUserService {
         this.copiarPropiedadesObjetoAHaciaBIgnorandoNulosDeA(aUser, userBD);
         userBD.setIdentification(aUser.getIdentification());
         userBD.setName(aUser.getName());
-        userBD.setTelephone(aUser.getTelephone());
+        userBD.setPassword(aUser.getPassword());
         aUser = userBD;
         this.iUserRepository.save(aUser);
     }

@@ -24,7 +24,7 @@ public class TaskDTO implements Serializable {
 
     private static final long serialVersionUID = 5472321489948527296L;
 
-    private Long id;
+    private Integer id;
 
     private Long idUser;
 
